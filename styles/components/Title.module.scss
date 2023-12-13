@@ -1,0 +1,44 @@
+.title {
+  z-index: 20;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 40px;
+  top: 16px;
+  position: sticky;
+  border-radius: 40px;
+  filter: blur(1px);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 2px 2px $green, 0 0 2px 2px $green inset;
+  color: $green;
+  display: flex;
+  font-size: 40px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  
+  @include bp(sm){
+    top: 32px;
+    height: 64px;
+    box-shadow: 0 0 4px 4px $green, 0 0 4px 4px $green inset;
+  }
+  
+}
+
+@keyframes marquee {
+  from { transform: translateX(0%); }
+  to { transform: translateX(50%); }
+}
+
+.marquee {
+  height: 50%;
+  width: 1000%;
+  right: 0;
+  position: absolute;
+  background-position: 100%;
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-image: url('/images/title.svg');
+  animation: marquee 60s infinite linear;
+}

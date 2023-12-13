@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  @include bp(sm) {
+    padding: 32px;
+    gap: 32px;
+  }
+  @include bp(lg) {
+    flex-direction: row;
+  }
+}
+
+.content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include bp(sm) {
+    gap: 32px;
+  }
+
+  @include bp(lg) {
+
+    &::before {
+      content: "";
+      z-index: 20;
+      top: 0;
+      position: fixed;
+      width: 100%;
+      height: 56px;
+      box-shadow: 0 8px 32px 16px $black-transparent;
+      background: linear-gradient($black 75%,  $black-transparent 100%);
+    }
+  }
+}
