@@ -1,0 +1,35 @@
+
+@keyframes float {
+  from { transform: translateY(0%); }
+  to { transform: translateY(-50%); }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 160px 20px yellow inset;
+  }
+  100% {
+    box-shadow: 0 0 160px 20px green inset;
+  }
+}
+
+.bg {
+  width: 100%;
+  height: 1000%;
+  background-image: url('/images/themes/bumpersticker2024/flappy-cloud.gif');
+  background-size: 33%;
+  background-position: center center;
+  position: absolute;
+  animation: float 60s infinite linear;
+}
+
+.cta {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  box-shadow: 0 0 80px 20px white inset;
+  @include f1;
+}

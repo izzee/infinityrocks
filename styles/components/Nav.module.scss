@@ -2,7 +2,12 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  position: sticky;
+  top: -328px;
+  z-index: 20;
   @include bp(sm) {
+    top: 0;
+    position: relative;
     flex-direction: row;
     gap: 32px;
   }
@@ -18,21 +23,32 @@
   }
 }
 
+@keyframes hue {
+  from { filter: hue-rotate(0deg); }
+  to { filter: hue-rotate(360deg); }
+}
+
 .hero {
   background-image: url('/images/hero.gif');
   background-size: 100% 100%;
-  height: 240px;
+  height: 320px;
   border-radius: 24px;
-  box-shadow: 0px 0px 24px 4px #FF00C7 inset, 0px 0px 8px 4px #FF00C7;
+  box-shadow: 0px 0px 16px 2px #FF00C7 inset, 0px 0px 4px 2px #FF00C7;
   @include bp(sm) {
     width: 50%;
-    height: 320px;
   }
   @include bp(lg) {
     width: 100%;
+    box-shadow: 0px 0px 24px 4px #FF00C7 inset, 0px 0px 8px 4px #FF00C7;
   }
   @include bp(xxl) {
     height: 400px;
+  }
+
+  &:hover {
+    background-image: url('/images/herohover.gif');
+    animation: hue .25s infinite;
+
   }
 }
 

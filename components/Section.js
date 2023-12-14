@@ -1,5 +1,7 @@
 import styles from '@/styles/components/Section.module.scss'
-import Calendar2024 from '@/components/themed/Calendar2024.js'
+import Calendar2024 from '@/components/themes/Calendar2024.js'
+import BumperSticker2024 from '@/components/themes/BumperSticker2024.js'
+
 
 const Section = ({data}) => {
 
@@ -8,6 +10,10 @@ const Section = ({data}) => {
       case 'calendar2024': 
         return (
           <Calendar2024 />
+        )
+      case 'bumpersticker2024': 
+        return (
+          <BumperSticker2024 />
         )
       default:
         return ""
