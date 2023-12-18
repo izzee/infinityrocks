@@ -5,6 +5,8 @@
   position: sticky;
   top: -328px;
   z-index: 20;
+
+  transition: width .25s, opacity .25s;
   @include bp(sm) {
     top: 0;
     position: relative;
@@ -17,10 +19,16 @@
     position: sticky;
     width: 320px;
     flex-direction: column;
+
   }
   @include bp(xxl) {
     width: 400px;
   }
+}
+
+.collapsed {
+  opacity: 0;
+  width: 0;
 }
 
 @keyframes hue {
@@ -30,6 +38,7 @@
 
 .hero {
   background-image: url('/images/hero.gif');
+  background-repeat: repeat;
   background-size: 100% 100%;
   height: 320px;
   border-radius: 24px;
@@ -47,8 +56,7 @@
 
   &:hover {
     background-image: url('/images/herohover.gif');
-    animation: hue .25s infinite;
-
+    animation: hue .25s infinite linear;
   }
 }
 
@@ -70,6 +78,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  color: $black;
+  transition: box-shadow .5s;
+
+
+  &:hover{
+    &:nth-child(1) {
+      box-shadow:  0px 0px 16px 2px  $blue inset, 0px 0px 8px 4px  $blue;
+    }
+    &:nth-child(2) {
+      box-shadow:  0px 0px 16px 2px $cyan inset, 0px 0px 8px 4px $cyan;
+    }
+    &:nth-child(3) {
+      box-shadow:  0px 0px 16px 2px $yellow inset, 0px 0px 8px 4px $yellow;
+    }
+    &:nth-child(4) {
+      box-shadow:  0px 0px 16px 2px $green inset, 0px 0px 8px 4px $green;
+    }
+  }
 
   
   @include f1;

@@ -1,9 +1,9 @@
 import styles from '@/styles/components/Title.module.scss'
 
-const Title = () => {
+const Title = ({collapsed}) => {
 
   return (
-    <div className={styles.title}>
+    <div className={`${styles.title} ${collapsed && styles.collapsed}`}>
       <div className={styles.marquee} />
     </div>
 

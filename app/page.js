@@ -1,25 +1,49 @@
+"use client"
+
+import { useState} from 'react';
+
+import Projects from '@/data/projects.json'
+
 import Nav from '@/components/Nav.js'
 import Title from '@/components/Title.js'
 import Section from '@/components/Section.js'
 
 import styles from '@/styles/components/Main.module.scss'
 
-import Projects from '@/data/projects.json'
-
 const Home = () => {
+
+  const [navCollapsed, setNavCollapsed] = useState(false)
+
+  const toggleExpand = () => {
+    setNavCollapsed(!navCollapsed)
+  }
+
   return (
     <main className={styles.main}> 
     
-      <Nav/>
+      <Nav collapsed={navCollapsed} />
       <div className={styles.content}>
-        <Title/>
+        <Title collapsed={navCollapsed}/>
         {
-          Projects.map((project, index) => {
+          Projects.map((year, index) => {
             return (
-              <Section
-                key={project.key}
-                data={project}
-              />
+              <div
+                className={styles.wrapper}
+                key={index}
+                id={year.year}
+              >
+                {
+                  year.projects.map((project, index) => {
+                    return (
+                      <Section
+                        key={index}
+                        data={project}
+                        toggleExpand={toggleExpand}
+                      />
+                    )
+                  })
+                }
+              </div>
             )
           })
         }

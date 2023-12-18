@@ -1,25 +1,48 @@
 [
   {
-    "key": 0,
-    "title": "2024 CALENDAR",
     "year": "2024",
-    "theme": "calendar2024"
+    "projects": [
+      {
+        "theme": "calendar2024",
+        "title": "2024 CALENDAR"
+      },
+      {
+        "theme": "bumpersticker2024",
+        "title": "2024 BUMPER STICKER"
+      }
+    ]
   },
   {
-    "key": 1,
-    "title": "2024 BUMPER STICKER",
-    "year": "2024",
-    "theme": "bumpersticker2024"
-
+    "year": "2023",
+    "projects": [
+      {
+        "theme": "default",
+        "title": "2023 CALENDAR",
+        "text": "<a href='https://www.printedmatter.org/catalog/61463'/>INFINITY ROCKS INFINITY FLOWERS INFINITY MICE INFINITY PHONES INFINITY BARKS INFINITY TEETH INFINITY FRUIT INFINITY SPIKE INFINITY LIGHTS INFINITY PAGES INFINITY TOUCH</a>",
+        "images": [
+          "2023-calendar/cover-edges.gif",
+          "2023-calendar/1.jpg",
+          "2023-calendar/2.jpg",
+          "2023-calendar/3.jpg",
+          "2023-calendar/4.jpg",
+          "2023-calendar/5.jpg",
+          "2023-calendar/6.jpg",
+          "2023-calendar/7.jpg",
+          "2023-calendar/2023-back.jpg"
+        ],
+        "carousel": true
+      },
+      {
+        "title": "2023 BUMPER STICKER"
+      }
+    ]
   },
   {
-    "key": 2,
-    "title": "2023 CALENDAR",
-    "year": "2023"
-  },
-  {
-    "key": 3,
-    "title": "2023 BUMPER STICKER",
-    "year": "2023"
+    "year": "2022",
+    "projects": [
+      {
+      "title": "2022 CALENDAR"
+      }
+    ]
   }
 ]

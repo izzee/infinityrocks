@@ -17,6 +17,7 @@
   align-items: center;
   z-index: 20;
   top: 64px;
+  transition: height .25s, opacity .25s;
   
   @include bp(sm){
     top: 32px;
@@ -24,6 +25,11 @@
     box-shadow: 0 0 4px 4px $green, 0 0 4px 4px $green inset;
   }
   
+}
+
+.collapsed {
+  opacity: 0;
+  height: 0;
 }
 
 @keyframes marquee {
