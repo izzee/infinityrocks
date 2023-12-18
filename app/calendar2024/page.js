@@ -1,4 +1,4 @@
-import Calendar2024 from '@/components/themes/Calendar2024.js'
+import Calendar2024 from '@/components/projects/Calendar2024.js'
 
 const Calendar2024Homepage = () => {
   return (

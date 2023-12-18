@@ -1,6 +1,7 @@
+import * as DOMPurify from 'dompurify';
 import styles from '@/styles/components/Section.module.scss'
-import Calendar2024 from '@/components/themes/Calendar2024.js'
-import BumperSticker2024 from '@/components/themes/BumperSticker2024.js'
+import Calendar2024 from '@/components/projects/Calendar2024.js'
+import BumperSticker2024 from '@/components/projects/BumperSticker2024.js'
 
 const Section = ({
   data,
@@ -17,17 +18,17 @@ const Section = ({
         return (
           <BumperSticker2024 />
         )
-      case 'default':
-        return defaultSectionTheme()
       default:
-        return ""
+        return defaultSectionTheme()
     }
   }
 
   const defaultSectionTheme = () => {
+    const clean = DOMPurify.sanitize(data.text);
     return (
-      <div>
-        {/* <p>{data.text}</p> */}
+      <div className={styles.content}>
+        <p dangerouslySetInnerHTML={{__html: clean}} />
+        <img src={data.image} />
       </div>
     )
   }

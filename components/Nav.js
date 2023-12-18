@@ -15,8 +15,7 @@ const Nav = ({collapsed}) => {
   }
 
   const anchorsFromYears = () => {
-    const years = ['2024', '2023', '2022', '∞ ∞ ∞']
-    console.log(years)
+    const years = ['2024', '2023', '2022', '∞']
     return (
       years.map((year, index) => {
         return anchorTag(year ,index)

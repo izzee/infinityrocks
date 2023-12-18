@@ -16,24 +16,14 @@
     "year": "2023",
     "projects": [
       {
-        "theme": "default",
         "title": "2023 CALENDAR",
         "text": "<a href='https://www.printedmatter.org/catalog/61463'/>INFINITY ROCKS INFINITY FLOWERS INFINITY MICE INFINITY PHONES INFINITY BARKS INFINITY TEETH INFINITY FRUIT INFINITY SPIKE INFINITY LIGHTS INFINITY PAGES INFINITY TOUCH</a>",
-        "images": [
-          "2023-calendar/cover-edges.gif",
-          "2023-calendar/1.jpg",
-          "2023-calendar/2.jpg",
-          "2023-calendar/3.jpg",
-          "2023-calendar/4.jpg",
-          "2023-calendar/5.jpg",
-          "2023-calendar/6.jpg",
-          "2023-calendar/7.jpg",
-          "2023-calendar/2023-back.jpg"
-        ],
-        "carousel": true
+        "image": "/images/projects/old/2023-cover.gif"
       },
       {
-        "title": "2023 BUMPER STICKER"
+        "title": "2023 BUMPER STICKER",
+        "text": "<a href='https://shop.infinity8rocks.com/cart/47608776098091:1?channel=buy_button'>BUY NOW</a>",
+        "image": "images/projects/old/2023-sticker.jpg"
       }
     ]
   },
@@ -41,7 +31,21 @@
     "year": "2022",
     "projects": [
       {
-      "title": "2022 CALENDAR"
+        "title": "2022 CALENDAR",
+        "text": "“This year <a href='https://2022.infinity8rocks.com' target='_blank'>2022</a> I resolve to&nbsp;know <br> what day it is every day of the&nbsp;year <br> no matter what day it is or how tired I&nbsp;get.”",
+        "image": "/images/projects/old/2022-cover.gif"
+
+
+      }
+    ]
+  },
+  {
+    "year": "∞",
+    "projects": [
+      {
+      "title": "You Have Arrived",
+      "text": "Email art created for the May 2018 installement of&nbsp;<a href='http://screen-space.info/' target='_blank'>SCREEN_</a>.",
+      "image": "/images/projects/old/you-have-arrived.jpg"
       }
     ]
   }
