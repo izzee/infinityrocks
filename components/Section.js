@@ -1,4 +1,3 @@
-import * as DOMPurify from 'dompurify';
 import styles from '@/styles/components/Section.module.scss'
 import Calendar2024 from '@/components/projects/Calendar2024.js'
 import BumperSticker2024 from '@/components/projects/BumperSticker2024.js'
@@ -24,10 +23,9 @@ const Section = ({
   }
 
   const defaultSectionTheme = () => {
-    const clean = DOMPurify.sanitize(data.text);
     return (
       <div className={styles.content}>
-        <p dangerouslySetInnerHTML={{__html: clean}} />
+        <p dangerouslySetInnerHTML={{__html: data.text}} />
         <img src={data.image} />
       </div>
     )
