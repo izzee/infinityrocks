@@ -27,7 +27,7 @@
 
 .content {
   flex: 1;
-  padding: 32px;
+  padding: 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -40,6 +40,7 @@
     width: 100%;
   }
   @include bp(lg) {
+    padding: 32px;
     gap: 32px;
     img, p {
       width: 50%;

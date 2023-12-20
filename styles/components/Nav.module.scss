@@ -38,17 +38,18 @@
 
 .hero {
   background-image: url('/images/hero.gif');
+  background-color: $pink;
   background-repeat: repeat;
   background-size: 100% 100%;
   height: 320px;
   border-radius: 24px;
-  box-shadow: 0px 0px 16px 2px #FF00C7 inset, 0px 0px 4px 2px #FF00C7;
+  box-shadow: 0px 0px 16px 2px $pink inset, 0px 0px 4px 2px $pink;
   @include bp(sm) {
     width: 50%;
   }
   @include bp(lg) {
     width: 100%;
-    box-shadow: 0px 0px 24px 4px #FF00C7 inset, 0px 0px 8px 4px #FF00C7;
+    box-shadow: 0px 0px 24px 4px $pink inset, 0px 0px 8px 4px $pink;
   }
   @include bp(xxl) {
     height: 400px;
