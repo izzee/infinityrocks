@@ -6,7 +6,7 @@ const BumperSticker2024 = () => {
     <>
       <div className={styles.bg}/>
       <div className={styles.cta}>
-        <a href='https://2024.infinity8rocks.com'>BUY NOW</a>
+        <a href='#'>SOLD OUT</a>
         <div className={styles.ctabg}/>
       </div>
     </>
