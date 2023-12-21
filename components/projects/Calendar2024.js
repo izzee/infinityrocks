@@ -79,7 +79,7 @@ const Calendar2024 = () => {
         <div className={styles.glowborder}/>
         {renderMarquee()}
         <div className={styles.cta}>
-          <a href='https:/shop.infinity8rocks.com/cart/47428239851819:1?channel=buy_button'>BUY NOW</a>
+          <a href='https://shop.infinity8rocks.com/cart/47428239851819:1?channel=buy_button'>BUY NOW</a>
           <div className={styles.altbg}></div>
         </div>
 
