@@ -1,7 +1,3 @@
-"use client"
-
-import { useState} from 'react';
-
 import Projects from '@/data/projects.json'
 
 import Nav from '@/components/Nav.js'
@@ -12,18 +8,13 @@ import styles from '@/styles/components/Main.module.scss'
 
 const Home = () => {
 
-  const [navCollapsed, setNavCollapsed] = useState(false)
-
-  const toggleExpand = () => {
-    setNavCollapsed(!navCollapsed)
-  }
 
   return (
     <main className={styles.main}> 
     
-      <Nav collapsed={navCollapsed} />
+      <Nav />
       <div className={styles.content}>
-        <Title collapsed={navCollapsed}/>
+        <Title/>
         {
           Projects.map((year, index) => {
             return (
@@ -38,7 +29,6 @@ const Home = () => {
                       <Section
                         key={index}
                         data={project}
-                        toggleExpand={toggleExpand}
                       />
                     )
                   })

@@ -58,6 +58,9 @@
   &:hover {
     background-image: url('/images/herohover.gif');
     animation: hue .25s infinite linear;
+    &::after {
+      content: "INFINITY ROCKS IS A TRIPARTATE COLLABORATION OF 3 ARTISTS DEDICATED TO THE CREATION OF JOY-SPARKING CALENDARS AND STICKERS"
+    }
   }
 }
 
