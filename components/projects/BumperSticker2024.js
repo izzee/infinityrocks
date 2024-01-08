@@ -6,7 +6,7 @@ const BumperSticker2024 = () => {
     <>
       <div className={styles.bg}/>
       <div className={styles.cta}>
-        <a href='#'>SOLD OUT</a>
+        <a href='#'>BUY NOW</a>
         <div className={styles.ctabg}/>
       </div>
     </>

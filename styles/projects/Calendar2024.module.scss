@@ -33,7 +33,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background-size: 33%;
+  background-size: 25%;
   background-position: center center;
   background-image: url('/images/projects/calendar2024/bg.jpg');
   animation: 5s infinite ease-in-out alternate pulse;
@@ -53,8 +53,14 @@
   flex: 1;
   object-fit: contain;
   background-size: contain;
+
   background-repeat: no-repeat;
   background-position: center;
+
+  @include bp(sm) {
+    background-size: contain;
+
+  }
 }
 
 .frame1 {
