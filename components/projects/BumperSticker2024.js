@@ -6,7 +6,7 @@ const BumperSticker2024 = () => {
     <>
       <div className={styles.bg}/>
       <div className={styles.cta}>
-        <a href='#'>SOLD OUT</a>
+        <a href='https://2024infinity8rocks.netlify.app' target='_blank'>SOLD OUT</a>
         <div className={styles.ctabg}/>
       </div>
     </>
