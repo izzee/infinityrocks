@@ -8,11 +8,21 @@
     position: absolute;
 }
 
+.baseball {
+position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+}
+
 .sky {
   width: 100%;
   flex: 1;
   position: relative;
   overflow: hidden;
+
 }
 
 

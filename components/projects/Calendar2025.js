@@ -5,6 +5,7 @@ const Calendar2025 = () => {
   return (
     <>
       <div className={styles.main}>
+        <img className={styles.baseball} src="images/projects/calendar2025/baseball.gif"/>
         <div className={styles.sky}>
           <div className={styles.cloudsleft}/>
           <div className={styles.cloudsright}/>
