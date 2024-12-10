@@ -1,7 +1,7 @@
 
 import styles from '@/styles/projects/Calendar2025.module.scss'
 
-const Calendar2025 = () => {
+const Calendar2025 = ({children}) => {
   return (
     <>
       <div className={styles.main}>
@@ -19,14 +19,9 @@ const Calendar2025 = () => {
 
        <div className={styles.foreground}>
         <img className={styles.baseball} src="images/projects/calendar2025/baseball.gif"/>
-          <div className={styles.wrapper}>
-            <div className={styles.ctablock}>
-              <img className={styles.calcover} src="images/projects/calendar2025/cover.gif"/>
-
-              test
-
-              <a href="#">Buy Now</a>
-            </div>
+          <div className={styles.product}>
+             {children || <a href="/calendar2025">Buy Now</a>}
+            
           </div>
         </div>
 
