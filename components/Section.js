@@ -5,8 +5,7 @@ import Calendar2025 from '@/components/projects/Calendar2025.js'
 import BumperSticker2024 from '@/components/projects/BumperSticker2024.js'
 
 const Section = ({
-  data,
-  toggleExpand
+  data
 }) => {
 
   const addThemeHTML = () => {
@@ -42,10 +41,6 @@ const Section = ({
       className={`${styles.section} ${styles[data.theme] || ''}`}
     >
       <div className={styles.title}>
-        {/* <div 
-          className={styles.expand}
-          onClick={toggleExpand}
-        >+</div> */}
         {data.title}
       </div>
       <div className={styles.body}>
