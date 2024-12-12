@@ -296,14 +296,16 @@ const Calendar2025Homepage = () => {
       <Calendar2025>
         <div className={styles.section}>
           <div className={styles.title}>
-            2025
-            <a href="/" className={styles.closebutton}>×</a>
+            INFINITY ROCKS 2025
+            <a href="/" className={styles.closebutton}></a>
           </div>
           <div className={styles.content}>
+            <p>*Fast* shipping now!</p>
             <div className={styles.shopify}>
               <div id="product-component-1733848918337"/>
               <div id="product-component-1733865407524"/>
             </div>
+            
           </div>
         </div>
       </Calendar2025>

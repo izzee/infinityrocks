@@ -2,6 +2,8 @@ import styles from '@/styles/components/Section.module.scss'
 import Calendar2024 from '@/components/projects/Calendar2024.js'
 import Calendar2025 from '@/components/projects/Calendar2025.js'
 import BumperSticker2024 from '@/components/projects/BumperSticker2024.js'
+import BumperSticker2025 from '@/components/projects/BumperSticker2025.js'
+
 
 const Section = ({
   data
@@ -12,6 +14,10 @@ const Section = ({
       case 'calendar2025': 
         return (
           <Calendar2025 />
+        )
+      case 'bumpersticker2025': 
+        return (
+          <BumperSticker2025 />
         )
       case 'calendar2024': 
         return (

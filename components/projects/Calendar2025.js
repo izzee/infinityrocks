@@ -21,10 +21,12 @@ const Calendar2025 = ({children}) => {
         <img className={styles.baseball} src="images/projects/calendar2025/baseball.gif"/>
           <div className={styles.product}>
              { children ? (
-                children
-             ) : (
+              <div className={styles.shopifywrapper}>
+                {children}
+              </div>
+             ) : ( 
               <div className={styles.ctawrapper}>
-                <img src="images/projects/calendar2025/cover.png"/>
+                <img src="images/projects/calendar2025/cover.gif"/>
                 <a className={styles.cta} href="/2025">Buy Now</a>
               </div>
              )}
