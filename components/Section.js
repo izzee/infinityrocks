@@ -1,14 +1,24 @@
 import styles from '@/styles/components/Section.module.scss'
 import Calendar2024 from '@/components/projects/Calendar2024.js'
+import Calendar2025 from '@/components/projects/Calendar2025.js'
 import BumperSticker2024 from '@/components/projects/BumperSticker2024.js'
+import BumperSticker2025 from '@/components/projects/BumperSticker2025.js'
+
 
 const Section = ({
-  data,
-  toggleExpand
+  data
 }) => {
 
   const addThemeHTML = () => {
     switch (data.theme) {
+      case 'calendar2025': 
+        return (
+          <Calendar2025 />
+        )
+      case 'bumpersticker2025': 
+        return (
+          <BumperSticker2025 />
+        )
       case 'calendar2024': 
         return (
           <Calendar2024 />
@@ -36,10 +46,6 @@ const Section = ({
       className={`${styles.section} ${styles[data.theme] || ''}`}
     >
       <div className={styles.title}>
-        {/* <div 
-          className={styles.expand}
-          onClick={toggleExpand}
-        >+</div> */}
         {data.title}
       </div>
       <div className={styles.body}>

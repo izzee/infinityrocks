@@ -1,0 +1,211 @@
+.main {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.background {
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.sky {
+  width: 100%;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.cloudsleft,
+.cloudsright {
+  position: absolute;
+  top: -50%;
+  width: 50%;
+  height: 300%;
+  box-sizing: border-box;
+  background-size: 50%;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background-image: url('/images/projects/calendar2025/sky.jpg');
+    background-size: 50%;
+  }
+}
+
+.cloudsleft {
+  left: 0;
+  &::after {
+    left: 0;
+    animation: scrollright 10s linear infinite;
+  }
+}
+
+.cloudsright {
+  right: 0;
+  &::after {
+    right: 0;
+    transform: scaleX(-1);
+    animation: scrollleft 10s linear infinite;
+  }
+}
+
+.bottom {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.grass {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: perspective(60px) rotateX(10deg);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: -100%;
+    left: -100%;
+    background-image: url('/images/projects/calendar2025/grass.jpg');
+    background-size: 10% 10%;
+    animation: scrollback 5s linear infinite;
+  }
+}
+
+.foreground {
+  position: absolute;
+  position: aboslute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  z-index: 10;
+
+  @include bp(sm) {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.baseball {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  min-height: 320px;
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+  mix-blend-mode: difference;
+  @include bp(md) {
+    mix-blend-mode: none;
+    position: relative;
+  }
+}
+
+.product {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctawrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.cta {
+  text-align: center;
+  padding: 4px 40px;
+  background-color: $green;
+  background-size: 50%;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 2;
+  animation: 1s infinite ease-in-out alternate glow;
+
+  &:hover {
+    filter: invert(1);
+  }
+}
+
+.shopifywrapper {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  @include bp(sm) {
+    width: 100%;
+    height: auto;
+    position: static;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0px 0px $green;
+  }
+  100% {
+    box-shadow: 0 0 16px 8px $green;
+  }
+}
+
+
+
+@keyframes scrollleft {
+  0% {
+    transform: translateX(0%) translateY(0);
+  }
+
+  100% {
+    transform: translateX(50%) translateY(-50%);
+  }
+}
+
+@keyframes scrollright {
+  0% {
+    transform: translateX(0%) scaleX(-1) translateY(0);
+  }
+
+  100% {
+    transform: translateX(-50%) scaleX(-1) translateY(-50%);
+  }
+}
+
+@keyframes scrollback {
+  0% {
+    transform: translateY(0%) ;
+  }
+
+  100% {
+    transform: translateY(-10%);
+  }
+}

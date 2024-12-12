@@ -79,7 +79,7 @@ const Calendar2024 = () => {
         <div className={styles.glowborder}/>
         {renderMarquee()}
         <div className={styles.cta}>
-          <a  href='https://www.printedmatter.org/catalog/64288' target="_blank">BUY NOW</a>
+          <a  href='https://www.printedmatter.org/catalog/64288' target="_blank">SOLD OUT</a>
           <div className={styles.altbg}></div>
         </div>
 

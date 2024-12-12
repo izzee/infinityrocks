@@ -1,5 +1,18 @@
 [
   {
+    "year": "2025",
+    "projects": [
+      {
+        "theme": "calendar2025",
+        "title": "2025 CALENDAR"
+      },
+      {
+        "theme": "bumpersticker2025",
+        "title": "2025 BUMPER STICKER"
+      }
+    ]
+  },
+  {
     "year": "2024",
     "projects": [
       {
