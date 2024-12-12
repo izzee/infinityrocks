@@ -37,26 +37,25 @@
 }
 
 .hero {
-  background-image: url('/images/hero.gif');
+  background-image: url('/images/hero2.gif');
   background-color: $pink;
   background-repeat: repeat;
   background-size: 100% 100%;
   height: 320px;
   border-radius: 24px;
-  box-shadow: 0px 0px 16px 2px $pink inset, 0px 0px 4px 2px $pink;
+  box-shadow: 0px 0px 16px 2px $white inset, 0px 0px 4px 2px $white;
   @include bp(sm) {
     width: 50%;
   }
   @include bp(lg) {
     width: 100%;
-    box-shadow: 0px 0px 24px 4px $pink inset, 0px 0px 8px 4px $pink;
+    box-shadow: 0px 0px 24px 4px $white inset, 0px 0px 8px 4px $white;
   }
   @include bp(xxl) {
     height: 400px;
   }
 
   &:hover {
-    background-image: url('/images/herohover.gif');
     animation: hue .25s infinite linear;
   }
 }
