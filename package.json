@@ -9,14 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "dompurify": "^3.0.6",
+    "dompurify": "^3.2.3",
     "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "sass": "^1.69.5"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.83.0"
   },
   "devDependencies": {
-    "eslint": "^8",
+    "eslint": "^8.57.1",
     "eslint-config-next": "14.0.4"
   }
 }
