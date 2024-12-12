@@ -141,12 +141,16 @@
   padding: 4px 40px;
   background-color: $green;
   background-size: 50%;
-  color: black;
+  color: $black;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 24px;
   line-height: 2;
   animation: 1s infinite ease-in-out alternate glow;
+
+  &:hover {
+    filter: invert(1);
+  }
 }
 
 .shopifywrapper {
