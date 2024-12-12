@@ -5,14 +5,6 @@ const nextConfig = {
     includePaths: ['styles'],
     prependData: `@import "@/styles/shared/mixins.scss";`
   },
-  async rewrites() {
-    return [
-      {
-        source: '/shop',
-        destination: '/shop/index.html',
-      },
-    ];
-  },
 }
 
 

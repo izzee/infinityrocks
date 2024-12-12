@@ -1,7 +1,6 @@
 import styles from '@/styles/components/Section.module.scss'
 import Calendar2024 from '@/components/projects/Calendar2024.js'
 import Calendar2025 from '@/components/projects/Calendar2025.js'
-
 import BumperSticker2024 from '@/components/projects/BumperSticker2024.js'
 
 const Section = ({

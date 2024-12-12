@@ -20,8 +20,14 @@ const Calendar2025 = ({children}) => {
        <div className={styles.foreground}>
         <img className={styles.baseball} src="images/projects/calendar2025/baseball.gif"/>
           <div className={styles.product}>
-             {children || <a href="/calendar2025">Buy Now</a>}
-            
+             { children ? (
+                children
+             ) : (
+              <div className={styles.ctawrapper}>
+                <img src="images/projects/calendar2025/cover.png"/>
+                <a className={styles.cta} href="/2025">Buy Now</a>
+              </div>
+             )}
           </div>
         </div>
 
