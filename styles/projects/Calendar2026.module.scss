@@ -1,0 +1,212 @@
+:global {
+  @font-face {
+    font-family: 'Garamon(d/t)';
+    src: url('/images/projects/calendar2026/Garamondt-Italic.woff2') format('woff2'),
+      url('/images/projects/calendar2026/Garamondt-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.95, 1);
+  }
+  100% {
+    transform: scale(.9, 1.25);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+.left,
+.center,
+.right {
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.center {
+  z-index: 1;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(chartreuse, #000000, green);
+}
+
+.left {
+  left: 0;
+  width: 30%;
+  background: url('/images/projects/calendar2026/forest.png');
+}
+
+.right {
+  right: 0;
+  width: 30%;
+  background: url('/images/projects/calendar2026/forest.png');
+}
+
+.gradientCurtain {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+}
+
+.lightning {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  mix-blend-mode: lighten;
+
+  &:nth-child(1) {
+    bottom: 0;
+    transform: scale(1, -1);
+  }
+}
+
+.platform {
+  position: fixed;
+  z-index: 1;
+  bottom: 10px;
+  left: -25%;
+  filter: blur(25px);
+  border-radius: 200%;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 255, 0.724);
+  animation: slide 5s linear infinite alternate-reverse;
+}
+
+.right .lightning {
+  mix-blend-mode: lighten;
+  z-index: 1;
+}
+
+.left > .lightning {
+  z-index: 2;
+  right: -50%;
+}
+
+.banner {
+  display: flex;
+  position: relative;
+
+  marquee {
+    flex: 1;
+    color: greenyellow;
+    font-family: 'Garamon(d/t)';
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    marquee {
+      border-color: blue;
+    }
+  }
+}
+
+.fastLayer {
+  opacity: .5;
+  filter: blur(.5px);
+  position: absolute;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  transform: scaleX(5);
+  transform-origin: left;
+  flex-direction: inherit;
+  pointer-events: none;
+}
+
+.clock {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  animation: pulse 1s linear infinite alternate-reverse;
+}
+
+.clockBase {
+  position: absolute;
+  left: -75%;
+  width: 200%;
+  height: 105%;
+}
+
+.clockHand1 {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  width: 20%;
+  height: 20%;
+  transform-origin: 30% 70%;
+  opacity: .9;
+  filter: blur(1px);
+  animation: rotate 1s linear infinite;
+}
+
+.clockHand2 {
+  opacity: .9;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 25%;
+  height: 25%;
+  transform-origin: 80% 20%;
+  filter: blur(1px);
+  animation: rotate 1s linear infinite;
+}
+
+.lateBanner {
+  font-family: 'Garamon(d/t)';
+  animation: jiggle .5s linear infinite alternate-reverse;
+  position: absolute;
+  bottom: 24px;
+  z-index: 100;
+  left: -40px;
+  background: rgb(68, 101, 161);
+  mix-blend-mode: difference;
+  border: 1px solid yellow;
+  text-align: center;
+  min-width: 300px;
+  color: white;
+
+  .daysLate {
+    font-size: 40px;
+    text-shadow: 0 1px 1px white, 0 -1px 1px #fff00f66,
+                 0 2px 1px white, 0 -2px 1px #ff00ff66,
+                 0 2px 1px white, 0 -2px 1px #fff00f66,
+                 0 3px 1px white, 0 -3px 1px #f00fff66,
+                 0 4px 1px white, 0 -4px 1px #fff00f06;
+  }
+}

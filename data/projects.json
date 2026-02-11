@@ -1,5 +1,14 @@
 [
   {
+    "year": "2026",
+    "projects": [
+      {
+        "theme": "calendar2026",
+        "title": "2026 CALENDAR?"
+      }
+    ]
+  },
+  {
     "year": "2025",
     "projects": [
       {
@@ -47,8 +56,6 @@
         "title": "2022 CALENDAR",
         "text": "“This year <a href='https://2022.infinity8rocks.com' target='_blank'>2022</a> I resolve to&nbsp;know <br> what day it is every day of the&nbsp;year <br> no matter what day it is or how tired I&nbsp;get.”",
         "image": "/images/projects/old/2022-cover.gif"
-
-
       }
     ]
   },
@@ -56,9 +63,9 @@
     "year": "∞",
     "projects": [
       {
-      "title": "You Have Arrived",
-      "text": "Email art created for the May 2018 installement of&nbsp;<a href='http://screen-space.info/' target='_blank'>SCREEN_</a>.",
-      "image": "/images/projects/old/you-have-arrived.jpg"
+        "title": "You Have Arrived",
+        "text": "Email art created for the May 2018 installement of&nbsp;<a href='http://screen-space.info/' target='_blank'>SCREEN_</a>.",
+        "image": "/images/projects/old/you-have-arrived.jpg"
       }
     ]
   }
