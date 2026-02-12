@@ -27,7 +27,7 @@ const Calendar2025 = ({children}) => {
              ) : ( 
               <div className={styles.ctawrapper}>
                 <img src="images/projects/calendar2025/cover.gif"/>
-                <a className={styles.cta} href="https://www.printedmatter.org/catalog/67559/">Buy Now</a>
+                <a className={styles.cta} href="https://www.printedmatter.org/catalog/67559/">SOLD OUT</a>
               </div>
              )}
           </div>
